@@ -1,0 +1,51 @@
+/* src/components/Layout.css */
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 240px;
+    background-color: #1a202c;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li a {
+    display: block;
+    color: #cbd5e0;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #2d3748;
+  }
+  
+  .sidebar li a.active {
+    background-color: #3182ce;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f7fafc;
+  }
